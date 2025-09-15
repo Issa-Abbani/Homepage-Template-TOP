@@ -1,0 +1,484 @@
+@font-face {
+  font-family: roboto;
+  src: url(Assets/roboto.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+
+  font-family: roboto;
+}
+
+.headerBackground {
+  background-color: #0891b2;
+  width: 100%;
+  height: 35%;
+  clip-path: polygon(0 0, 100% 0, 100% 55%, 0% 100%);
+  position: absolute;
+  /* box-shadow: 2px 2px 5px gray; */
+}
+
+.icon {
+  height: 20px;
+  margin: 10px;
+
+  cursor: pointer;
+  position: relative;
+
+  transition: transform 0.2s ease;
+}
+
+@media (min-width: 1025px) {
+  .headerContent {
+    height: fit-content;
+    width: 900px;
+
+    background-color: white;
+
+    border-radius: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+
+    margin: 100px 20px 50px 20px;
+    padding: 10px 20px;
+
+    position: relative;
+
+    box-shadow: 2px 2px 5px gray;
+  }
+
+  .portraitHeadDiv {
+    height: 200px;
+    width: 800px;
+
+    transform: scale(1.3);
+
+    background-image: url(Assets/portrait.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: flex-end;
+
+    box-shadow: 2px 2px 5px gray;
+  }
+
+  .portraitHeadDiv h1 {
+    font-family: "Times New Roman";
+
+    color: whitesmoke;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+
+  .aboutDiv {
+    height: fit-content;
+    padding: 0 20px 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .aboutDesc {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 10px;
+    padding-left: 20px;
+  }
+  .aboutDesc p {
+    padding-left: 10px;
+  }
+  .socialLinks {
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .icon:hover {
+    transform: scale(1.4);
+  }
+
+  /* footer */
+  footer {
+    height: fit-content;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-evenly;
+
+    color: white;
+    background-color: #0891b2;
+
+    margin-top: 50px;
+
+    padding: 50px 0;
+  }
+
+  .infoDiv h3 {
+    font-size: 2rem;
+  }
+
+  .portraitFooter img {
+    height: 300px;
+  }
+
+  .socialLinksFooter {
+    display: flex;
+    width: 100%;
+    margin: 0;
+  }
+}
+
+@media (min-width: 756px) and (max-width: 1024px) {
+  .headerBackground {
+    background-color: #0891b2;
+    width: 100%;
+    height: 35%;
+    clip-path: polygon(0 0, 100% 0, 100% 55%, 0% 100%);
+    position: absolute;
+  }
+
+  .headerContent {
+    width: 600px;
+
+    background-color: white;
+
+    border-radius: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 100px 20px 50px 20px;
+    padding: 10px 20px 10px 10px;
+
+    position: relative;
+
+    box-shadow: 2px 2px 5px gray;
+  }
+
+  .portraitHead img {
+    height: 230px;
+  }
+
+  .portraitHeadDiv {
+    height: 230px;
+    width: 1200px;
+
+    border-radius: 10px 0 0 10px;
+
+    background-image: url(Assets/portrait.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  .portraitHeadDiv h1 {
+    font-size: 1.6rem;
+    font-family: "Times New Roman";
+
+    color: whitesmoke;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+
+  .aboutDiv {
+    height: fit-content;
+    padding: 0 20px 0 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .aboutDesc {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 10px;
+    padding-left: 20px;
+  }
+  .aboutDesc p {
+    padding-left: 10px;
+  }
+  .socialLinks {
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  /* footer */
+
+  footer {
+    height: fit-content;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-evenly;
+
+    color: white;
+    background-color: #0891b2;
+
+    margin-top: 50px;
+
+    padding: 50px 0;
+  }
+
+  .infoDiv {
+    width: 50%;
+  }
+
+  .infoDiv h3 {
+    font-size: 2rem;
+  }
+
+  .portraitFooter img {
+    height: 300px;
+  }
+
+  .socialLinksFooter {
+    display: flex;
+    width: 100%;
+    margin: 0;
+  }
+}
+
+@media (max-width: 755px) {
+  .headerContent {
+    height: fit-content;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    gap: 50px;
+
+    padding: 10px 0px;
+
+    position: relative;
+  }
+
+  .headerContent .icon {
+    height: 35px;
+  }
+
+  .portraitHeadDiv {
+    height: 350px;
+    width: 300px;
+    background-image: url(Assets/potraitPhone.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+
+  .portraitHeadDiv h1 {
+    font-size: 2.5rem;
+    font-family: "Times New Roman";
+
+    color: whitesmoke;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+
+  .aboutDiv {
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .aboutDesc {
+    display: flex;
+    align-items: center;
+    width: 90%;
+    padding-left: 20px;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .socialLinks {
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  /* footer */
+  footer {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    color: white;
+    background-color: #0891b2;
+    margin-top: 50px;
+    padding-top: 30px;
+  }
+
+  .infoDiv h3 {
+    align-self: center;
+    font-size: 2rem;
+  }
+
+  .infoDiv {
+    width: 80%;
+  }
+
+  .portraitFooter img {
+    width: 100%;
+    font-size: 50rem;
+  }
+
+  .socialLinksFooter {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+    margin: 10px 0;
+  }
+}
+
+.contentBox {
+  margin-top: 40px;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cardsContainer {
+  flex: 1;
+  scale:  0.8;
+  width: 100%;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, 350px);
+  gap: 45px;
+  margin-top: 50px;
+}
+
+.contentBox h3 {
+  font-size: 2.5rem;
+  font-weight: 300;
+}
+
+.demoCard .projectSS {
+  background-color: red;
+}
+
+.demoCard {
+  outline: 1px solid red;
+}
+
+.card {
+  height: 400px;
+  width: 350px;
+
+  margin-bottom: 10px;
+
+  border-radius: 0 0 10px 10px;
+}
+
+.projectSS {
+  height: 60%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  color: white;
+}
+.projectInfo {
+  height: 40%;
+  width: 100%;
+}
+
+.projectInfoHead {
+  height: 30%;
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.projectTitle {
+  height: 100%;
+  width: 70%;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+.projectLinks {
+  height: 100%;
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.projectDesc {
+  height: 70%;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 20px 0px 0 20px;
+}
+
+
+.infoDiv {
+  display: flex;
+  flex-direction: column;
+}
+
+.infoDiv * {
+  margin-bottom: 25px;
+}
+
+.footerContact {
+  margin-bottom: 10px;
+}
+
+.socialLinksFooter img {
+  height: 30px;
+}
+
+.socialLinksFooter img:first-child {
+  margin-left: 0px;
+}
